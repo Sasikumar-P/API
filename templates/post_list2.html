@@ -1,0 +1,46 @@
+{% extends 'post.html' %}
+{% block content %}
+{% load staticfiles %}
+<div ng-controller="ThirdController">
+<form class = "form-horizontal" role = "form" method="put">
+   
+   <div class = "form-group">
+      <label for = "firstname" class = "col-sm-2 control-label">ID</label>
+		
+      <div class = "col-sm-10">
+         <input type = "text" class = "form-control" id = "firstname" placeholder = "Enter First Name" ng-model="id">
+      </div>
+   </div>
+   <div class = "form-group">
+      <label for = "firstname" class = "col-sm-2 control-label">AUTHOR</label>
+		
+      <div class = "col-sm-10">
+         <input type = "text" class = "form-control" id = "firstname" placeholder = "Enter First Name" ng-model="author">
+      </div>
+   </div>
+   
+   <div class = "form-group">
+      <label for = "lastname" class = "col-sm-2 control-label">BODY</label>
+		
+      <div class = "col-sm-10">
+         <input type = "text" class = "form-control" id = "lastname" placeholder = "Enter Last Name"   ng-model="body">
+      </div>
+   </div>
+
+<div class = "form-group">
+      <label for = "lastname" class = "col-sm-2 control-label">TITLE</label>
+		
+      <div class = "col-sm-10">
+         <input type = "text" class = "form-control" id = "lastname" placeholder = "Enter Last Name"   ng-model="title">
+      </div>
+   </div>
+   <div class = "form-group">
+      <div class = "col-sm-offset-2 col-sm-10">
+         <button type = "button" class = "btn btn-default" ng-click="addd()" name="add">Sign in</button>
+      </div>
+   </div>
+	
+</form>
+
+</div>
+{% endblock %}

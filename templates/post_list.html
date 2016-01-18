@@ -1,0 +1,38 @@
+{% extends 'post.html' %}
+{% block content %}
+{% load staticfiles %}
+<div ng-controller="FirstController">
+
+   <table class = "table">
+      
+     
+      
+      <thead>
+         <tr>
+<th>id</th>
+            <th>author</th>
+            <th>body</th>
+            <th>created_at</th>
+<th>updated_at</th>
+<th>title</th>
+         </tr>
+      </thead>
+      
+      <tbody>
+         <tr ng-repeat="student in students">
+{% verbatim %}    
+      <td>{{student.id}}</td>
+      <td>{{student.author}}</td>
+      <td>{{ student.body }}</td>
+      <td>{{ student.created_at}}</td>
+<td>{{student.updated_at}}</td>
+<td>{{student.title}}</td>
+ {% endverbatim %}
+</tr>
+      </tbody>
+      
+   </table>
+    </div>
+
+
+{% endblock %}

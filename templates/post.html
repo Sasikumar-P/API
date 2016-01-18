@@ -1,0 +1,56 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<div ng-app="myApp">
+	 {% load staticfiles %}
+<link href="{% static 'css/bootstrap.min.css' %}"
+      rel="stylesheet" media="screen">
+<link href="{% static 'css/bootstrap.css' %}"
+      rel="stylesheet" media="screen">
+<link href="{% static 'css/bootstrap.css.map' %}"
+      rel="stylesheet" media="screen">
+<link href="{% static 'css/bootstrap-theme.css' %}"
+      rel="stylesheet" media="screen">
+<link href="{% static 'css/bootstrap-theme.css.map' %}"
+      rel="stylesheet" media="screen">
+<link href="{% static 'css/bootstrap-theme.min.css' %}"
+      rel="stylesheet" media="screen">
+</head>
+<body>
+    <div class="page-header">
+        <h1><a href="/">Django Girls Blog</a></h1>
+    </div>
+    <div class="content container">
+<div class="row"><div class="col-sm-4">
+<a href="/postnew/">GET</a></div>
+<a href="/postnew1/">POST</a></div>
+<a href="/postnew2/">UPDATE</a></div>
+
+        <div class="row">
+            <div class="col-md-8">
+            {% block content %}
+            {% endblock %}
+            </div>
+        </div>
+    </div>
+</body>
+<script src="{% static 'js/bootstrap.js' %}"></script>
+<script src="{% static 'css/bootstrap.css' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/html5shim.min.js' %}"></script>
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/modernizr.min.js' %}"></script>
+<script src="{% static 'js/angular.js' %}"></script>
+<script src="{% static 'js/angular-route.js' %}"></script>
+<script src="{% static 'js/angular.min.js' %}"></script>
+<script src="{% static 'js/app.js' %}"></script>
+<script src="{% static 'js/FirstController.js' %}"></script>
+<script src="{% static 'js/SecondController.js' %}"></script>
+<script src="{% static 'js/ThirdController.js' %}"></script>
+
+</div>
+
+</html>
